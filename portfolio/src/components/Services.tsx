@@ -17,7 +17,7 @@ interface ServiceCardProps {
 const ServiceCard: React.FC<ServiceCardProps> = ({ title, description, isDark }) => {
   return (
     <div className={` rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-shadow duration-300 flex flex-col items-center text-center h-full ${isDark ? " bg-gray-700 text-white " : "bg-white"}`}>
-      <h3 className="text-xl md:text-2xl font-black uppercase mb-4  tracking-wide">
+      <h3 className="text-xl md:text-2xl font-black uppercase mb-4  tracking-wide ">
         {title}
       </h3>
       <p className=" text-sm md:text-base leading-relaxed font-medium">
@@ -65,7 +65,7 @@ const Services: React.FC = ({isDark}:any) => {
         
         {/* Header */}
         <div className="mb-10 relative">
-          <h2 className={`md:text-4xl font-bold   uppercase tracking-wider underline ${isDark ? "text-white" : "text-black"} `}>
+          <h2 className={`md:text-4xl font-bold   uppercase tracking-wider underline underline-offset-10  ${isDark ? "text-white" : "text-black"} `}>
             Services
           </h2>
           {/* Underline */}

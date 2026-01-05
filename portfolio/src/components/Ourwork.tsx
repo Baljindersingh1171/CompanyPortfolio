@@ -1,14 +1,15 @@
 import Badge from "./Badge"
 import autopartphone from "../assets/images/autopartphone.png"
 import carpart from "../assets/images/carpart.jpg"
+import autoparts2 from "../assets/images/autoparts2.jpg"
 import tapslogo from "../assets/images/tapslogo.png"
 
-export default function OurWork() {
+export default function OurWork({isDark}: {isDark?: boolean}) {
   return (
     <>
     <section className="max-w-7xl px-4 mx-auto mt-15">
       <div
-        className=" w-full p-10 font-sans bg-[linear-gradient(135deg,#0b1f3a_0%,#143d73_35%,#194a89_65%,#2f6db5_100%)]"
+        className={` w-full p-10 font-sans ${isDark ? "bg-gray-700" : "bg-[linear-gradient(135deg,#0b1f3a_0%,#143d73_35%,#194a89_65%,#2f6db5_100%)]"}`}
         id="work"
       >
         <Badge title="Spineor WebServices"  className=" text-white" lineColor="bg-white" />
@@ -19,16 +20,16 @@ export default function OurWork() {
           <div className="w-full lg:w-7/12 flex">
             <div className="w-full space-y-6">
 
-              <h1 className="text-white text-[32px] sm:text-[40px] md:text-5xl font-bold mb-7 font-bold">
+              <h1 className="text-white text-4xl font-bold sm:text-[40px] md:text-5xl font-bold mb-7 font-bold underline-offset-10 underline">
                 Our Work
               </h1>
 
-              <div className="max-w-[200px]">
+              <div className="max-w-[250px]">
                 <img src={tapslogo} alt="The Auto Parts Shop" />
               </div>
 
-              <div className="text-gray-300 text-lg">
-                <h1>Digital Marketing Strategy for TheAutoPartsShop.com</h1>
+              <div className="text-gray-300 text-lg ">
+                <h1 className="font-bold text-white">Digital Marketing Strategy for TheAutoPartsShop.com</h1>
                 <br />
                 <p>
                   <span className="font-bold text-white">
@@ -79,7 +80,7 @@ export default function OurWork() {
               {/* LEFT FLOATING IMAGE */}
               <img
                 src={carpart}
-                className="absolute -left-5 bottom-24 h-[80px] sm:h-[100px] md:h-[150px] z-20 shadow-xl"
+                className="absolute -left-5 bottom-60 h-[80px] sm:h-[100px] md:h-[150px] z-20 shadow-xl max-w-40"
               />
 
               {/* CENTER PHONE */}
@@ -90,8 +91,8 @@ export default function OurWork() {
 
               {/* RIGHT FLOATING IMAGE */}
               <img
-                src={carpart}
-                className="absolute -right-5 top-20 h-[80px] sm:h-[100px] md:h-[150px] z-20 shadow-xl"
+                src={autoparts2}
+                className="absolute -right-5 top-20 h-[80px] sm:h-[100px] md:h-[150px] z-20 shadow-xl max-w-40"
               />
 
             </div>

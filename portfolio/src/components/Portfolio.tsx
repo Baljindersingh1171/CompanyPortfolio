@@ -74,16 +74,16 @@ export default function Portfolio() {
         <Think isDark={isDark}/>
         <Services isDark={isDark}/>
         <Message isDark={isDark}/>
-        <WorkflowCard steps={steps}/>
+        <WorkflowCard steps={steps} isDark={isDark}/>
         <TermConditions isDark={isDark}/>
-        <Brandidentity/>
+        <Brandidentity isDark={isDark}/>
          {/* <Brandidentity2/> */}
-        <OurWork/>
-    <Work/>
-        <Banner/>
+        <OurWork isDark={isDark}/>
+    <Work isDark={isDark}/>
+        <Banner isDark={isDark}/>
         {/* <Banner1/>
         <Banner2/> */}
-        <Thankyou/>
+        <Thankyou isDark={isDark}/>
 
 
         {/* Skills Section */}

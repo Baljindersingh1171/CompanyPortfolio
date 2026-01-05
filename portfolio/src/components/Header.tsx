@@ -24,11 +24,7 @@ const Header = ({ isDark, setIsDark }: any) => {
               <a
                 key={item}
                 href={`#${item}`}
-                className={`capitalize font-medium transition-colors ${
-                  isDark
-                    ? "text-white  "
-                    : "text-black hover:text-[#194a89] "
-                }`}
+                className={`capitalize font-medium transition-colors border-b-2 border-transparent hover:border-[#194a89] hover:text-[#194a89] text-base sm:text-lg md:text-xl`}
               >
                 {item}
               </a>
@@ -48,16 +44,16 @@ const Header = ({ isDark, setIsDark }: any) => {
           <div className="flex items-center gap-2 md:hidden">
             <button
               onClick={() => setIsDark(!isDark)}
-              className="p-2 rounded-lg hover:bg-gray-100 transition-colors"
+              className="p-2 rounded-lg  transition-colors"
            
             >
-              {isDark ? <Sun size={20} /> : <Moon size={20} />}
+              {isDark ? <Sun size={20} color={isDark ? "white" : "black"}  /> : <Moon size={20}  color={isDark ? "white" : "black"} />}
             </button>
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
             
             >
-              {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
+              {isMenuOpen ? <X size={24} color={isDark ? "white" : "black"}   /> : <Menu size={24} color={isDark ? "white" : "black"} />}
             </button>
           </div>
         </div>
@@ -67,7 +63,7 @@ const Header = ({ isDark, setIsDark }: any) => {
       {isMenuOpen && (
         <div
           className={`md:hidden border-t ${
-            isDark ? "bg-gray-800 border-gray-700" : "bg-white"
+            isDark ? "bg-gray-800 border-gray-700 text-white" : "bg-white "
           }`}
         >
           <div className="px-4 pt-2 pb-4 space-y-2">
@@ -76,7 +72,7 @@ const Header = ({ isDark, setIsDark }: any) => {
                 key={item}
                 href={`#${item}`}
                 onClick={() => setIsMenuOpen(false)}
-                className="block w-full text-left px-3 py-2 rounded-md capitalize font-medium hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors"
+                className="block w-full text-left px-3 py-2 rounded-md capitalize font-medium dark:hover:bg-gray-700 transition-colors border-b-2 border-transparent hover:border-[#194a89] text-base sm:text-lg md:text-xl"
                
               >
                 {item}

@@ -36,7 +36,7 @@ const Think: React.FC = ({isDark}:any) => {
       {/* Header Section */}
       <div className="mb-5">
         <div className="inline-block">
-            <h2 className={`text-4xl font-bold mb-4 text-center  ${isDark ? "text-white" : "text-black"} `}>
+            <h2 className={`text-4xl font-bold mb-4 text-center  underline underline-offset-10  ${isDark ? "text-white" : "text-black"} `}>
              Think
           </h2>
         </div>
@@ -68,12 +68,12 @@ const Think: React.FC = ({isDark}:any) => {
         {steps.map((step) => (
           <div key={step.id} className="relative">
              {/* Dot on the timeline */}
-            <div className="absolute -left-[39px] top-0 bg-white border-2 border-[#470f7e] rounded-full p-1">
-               <div className="w-2 h-2 bg-[#470f7e] rounded-full"></div>
+            <div className="absolute -left-[39px] top-0 bg-white border-2 border-[#194a89] rounded-full p-1">
+               <div className="w-2 h-2 bg-[#194a89] rounded-full"></div>
             </div>
             
             <div className="flex items-center gap-4 mb-2">
-              <div className="text-[#470f7e]">
+              <div className="text-[#194a89]">
                 {step.icon}
               </div>
               <h3 className="font-bold text-xl uppercase">{step.label}</h3>

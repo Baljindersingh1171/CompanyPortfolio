@@ -12,11 +12,11 @@ import truck from "../assets/images/truck.jpg"
 
 const jewelryImages = [j1, j2, j3, j4];
 
-export default function Work() {
+export default function Work({isDark}: {isDark?: boolean}) {
     return (
         <div className="max-w-7xl mx-auto mt-15 px-4">
             <Badge title="Spineor WebService" />
-            <h1 className="text-[32px] sm:text-[40px] lg:text-[45px] font-bold mb-10">
+            <h1 className={`text-4xl font-bold sm:text-[40px] lg:text-[45px] font-bold mb-10 underline-offset-10 underline ${isDark ? "text-white" : ""}`}>
                 Our Work
             </h1>
             <div className="flex flex-col lg:flex-row gap-12">
@@ -70,32 +70,32 @@ export default function Work() {
                 {/* RIGHT PANEL - The List */}
 
                 <div className="w-full lg:w-7/12 p-6 md:p-12 flex items-center">
-                    <div className="w-full max-w-2xl mx-auto space-y-6">
+                    <div className={`w-full max-w-2xl mx-auto space-y-6 ${isDark ? "text-white" : "text-black"}`}>
 
                         
 
-                        <h1 className="text-[32px] sm:text-[40px] lg:text-[45px] font-bold leading-tight">
+                        <h1 className={`text-[32px] sm:text-[40px] lg:text-[45px] font-bold leading-tight ${isDark ? "text-white" : ""}`}>
                             I Carry Power. <br /> I Carry Your Future.
                         </h1>
 
-                        <p className="text-gray-600 text-lg leading-relaxed">
+                        <p className=" text-lg leading-relaxed">
                             I’m not just a truck. I’m freedom on wheels — long highways, early
                             mornings, and big ambitions waiting to move forward.
                         </p>
 
-                        <p className="text-gray-600 text-lg leading-relaxed">
+                        <p className=" text-lg leading-relaxed">
                             Before you drive me, you need more than a dream. You need the
                             <span className="font-semibold text-gray-900"> right license</span>,
                             the right training, and the confidence to command the road.
                         </p>
 
-                        <ul className="space-y-3 text-gray-700">
+                        <ul className="space-y-3 ">
                             <li>🚛 Expert instructors with real-road experience</li>
                             <li>🛣️ Flexible training programs built for your schedule</li>
                             <li>📜 License-focused, hands-on learning</li>
                         </ul>
 
-                        <p className="text-gray-800 font-semibold text-lg">
+                        <p className=" font-semibold text-lg">
                             Get licensed. Take control. Drive your future.
                         </p>
 

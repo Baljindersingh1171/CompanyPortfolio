@@ -49,7 +49,7 @@ export default function TermConditions({ isDark }:any) {
             <section className="max-w-7xl px-4 mx-auto mt-15">
                 <div
                     className={`  flex items-center  p-10 ${isDark
-                        ? "bg-[linear-gradient(135deg,#1a1a1a_5%,#3b1d0f_100%)]"
+                        ? "bg-gray-700"
                         : "bg-[linear-gradient(135deg,#0b1f3a_0%,#143d73_35%,#194a89_65%,#2f6db5_100%)]"
                         }`}
                 >
@@ -58,7 +58,7 @@ export default function TermConditions({ isDark }:any) {
                     <div className="w-full mx-auto  text-white">
                         <Badge title="Spineor WebServices" lineColor="bg-white" />
                         <div className="">
-                            <h1 className="text-4xl md:text-5xl font-bold mb-7">
+                            <h1 className="text-4xl md:text-5xl font-bold mb-7 underline-offset-10 underline">
                                 Terms & Conditions
                             </h1>
                             <p className="text-lg opacity-80 mb-10">

@@ -37,7 +37,16 @@ const items: MessageItem[] = [
 // --- Reusable List Item Component ---
 const ListItem: React.FC<MessageItem> = ({ id, title, description, isDark }) => {
   return (
-    <div className={`w-full ${isDark ? "bg-gray-700" : "bg-[linear-gradient(135deg,#0b1f3a_0%,#143d73_35%,#194a89_65%,#2f6db5_100%)]"} rounded-2xl p-6 text-white shadow-lg flex items-center gap-6 transform transition-transform hover:scale-[1.02]`}>
+    <div
+      className={`w-full ${
+        isDark
+          ? "bg-gray-700"
+          : "bg-[linear-gradient(135deg,#0b1f3a_0%,#143d73_35%,#194a89_65%,#2f6db5_100%)]"
+      } rounded-2xl p-6 text-white flex items-center gap-6
+      shadow-md
+      hover:shadow-[0_25px_50px_rgba(0,0,0,0.45)] hover:shadow-2xl
+      transform transition-all duration-300 hover:scale-[1.02]`}
+    >
       {/* Number Section */}
       <div className="flex-shrink-0">
         <span className="text-6xl font-bold tracking-tighter">{id}</span>
@@ -57,6 +66,7 @@ const ListItem: React.FC<MessageItem> = ({ id, title, description, isDark }) => 
   );
 };
 
+
 // --- Main Layout Component ---
 const Message: React.FC = ({isDark}:any) => {
   return (
@@ -72,9 +82,9 @@ const Message: React.FC = ({isDark}:any) => {
         <div className=" z-10 mt-12 md:ml-8 relative">
           <div className=" flex  border-2 border-white p-6 inline-block mb-4 relative min-h-[250px] " style={{ display: 'flex' }}>
              <h1 className="text-4xl md:text-4xl font-black text-white leading-tight">
-              Mess<br />age.
+              Message.
             </h1>
-              <div className=" z-10 flex justify-center  my-8 absolute right-[10px] max-w-[70%] bottom-[0px]">
+              <div className=" z-10 flex justify-center  my-8 absolute right-[-39px] max-w-[70%] bottom-[0px]">
           <img 
             src={image}
             alt="3D Character working on laptop"
@@ -111,7 +121,7 @@ const Message: React.FC = ({isDark}:any) => {
 
       {/* RIGHT PANEL - The List */}
    
-      <div className={`w-full lg:w-7/12 ${isDark ? "bg-gray-800" : "bg-white"} p-6 md:p-12 flex items-center`}>
+      <div className={`w-full lg:w-7/12 ${isDark ? "bg-gray-900" : "bg-white"} p-6 md:p-12 flex items-center`}>
       
         <div className="w-full max-w-2xl mx-auto space-y-6">
               

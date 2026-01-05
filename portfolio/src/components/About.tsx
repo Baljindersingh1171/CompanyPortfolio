@@ -33,7 +33,7 @@ const About: React.FC<AboutProps> = ({ isDark }) => {
           <div className="w-full lg:w-7/12 mx-auto">
        
 
-            <h2 className={`text-4xl font-bold mb-12 text-center underline ${isDark ? "text-white" : "text-black"}`}>
+            <h2 className={`text-4xl font-bold mb-12 text-center underline underline-offset-10 ${isDark ? "text-white" : "text-black"}`}>
               ABOUT US
             </h2>
 

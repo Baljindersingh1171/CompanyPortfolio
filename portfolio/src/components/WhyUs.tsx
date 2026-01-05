@@ -24,7 +24,7 @@ const WhyUs = ({ isDark }: { isDark: boolean }) => {
        
 
         <h2
-          className={`text-4xl font-bold mb-4 ${
+          className={`text-4xl font-bold mb-4  underline underline-offset-10 ${
             isDark ? "text-white" : "text-gray-900"
           }`}
         >
