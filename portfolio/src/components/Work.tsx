@@ -15,7 +15,7 @@ const jewelryImages = [j1, j2, j3, j4];
 export default function Work({isDark}: {isDark?: boolean}) {
     return (
         <div className="max-w-7xl mx-auto mt-15 px-4">
-            <Badge title="Spineor WebService" />
+            <Badge title="Spineor WebService" isDark={isDark} />
             <h1 className={`text-4xl font-bold sm:text-[40px] lg:text-[45px] font-bold mb-10 underline-offset-10 underline ${isDark ? "text-white" : ""}`}>
                 Our Work
             </h1>
@@ -58,7 +58,7 @@ export default function Work({isDark}: {isDark?: boolean}) {
             </div>
 
             <div className=" min-h-screen w-full font-sans mt-10 max-w-7xl mx-auto">
-                <Badge title="Spineor WebServices" className="px-10 pt-10" />
+                <Badge title="Spineor WebServices" className="px-10 pt-10" isDark={isDark} />
 
                 <div className="flex flex-col lg:flex-row">
                       {/* LEFT PANEL - Visuals */}

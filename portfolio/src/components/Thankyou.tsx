@@ -5,7 +5,7 @@ export default function Thankyou({isDark}: {isDark?: boolean}) {
   return (
     <div className={`w-full font-sans mt-10 max-w-7xl mx-auto  ${isDark ? "text-white bg-gray-700" : "text-black bg-[linear-gradient(135deg,#0b1f3a_0%,#143d73_35%,#194a89_65%,#2f6db5_100%)]"} `}>
       
-      <Badge title="Spineor WebServices" className="px-10 pt-10 text-white" lineColor="bg-white" />
+      <Badge title="Spineor WebServices" className="px-10 pt-10 text-white" isDark={isDark} />
 
       <div className={`flex flex-col lg:flex-row items-center ${isDark ? "text-white " : "text-black"}`}>
 

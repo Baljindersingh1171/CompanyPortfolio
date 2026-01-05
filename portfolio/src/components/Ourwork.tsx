@@ -12,7 +12,7 @@ export default function OurWork({isDark}: {isDark?: boolean}) {
         className={` w-full p-10 font-sans ${isDark ? "bg-gray-700" : "bg-[linear-gradient(135deg,#0b1f3a_0%,#143d73_35%,#194a89_65%,#2f6db5_100%)]"}`}
         id="work"
       >
-        <Badge title="Spineor WebServices"  className=" text-white" lineColor="bg-white" />
+        <Badge title="Spineor WebServices" className=" text-white" isDark={isDark} />
 
         <div className="flex flex-col lg:flex-row gap-12">
 

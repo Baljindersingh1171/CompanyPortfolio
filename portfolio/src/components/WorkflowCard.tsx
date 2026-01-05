@@ -21,7 +21,7 @@ const WorkflowCard: React.FC<WorkflowCardsProps> = ({ steps, className = '', isD
     // Changed to a Grid layout for better responsiveness than flex
     <div className='max-w-7xl mx-auto px-4 mt-15' id="procedure ">
       <div className='mt-15'>
-        <Badge title="Spineor WebServices" className="" />
+        <Badge title="Spineor WebServices" className="" isDark={isDark} />
       </div>
 
       <h2 className={`text-4xl font-bold mb-12  underline underline-offset-10  ${isDark ? "text-white" : "text-black"}`}>
@@ -76,7 +76,7 @@ const WorkflowCard: React.FC<WorkflowCardsProps> = ({ steps, className = '', isD
       </div>
 
       <div className={`min-h-screen w-full font-sans mt-15 p-10 max-w-7xl mx-auto ${isDark ? "bg-gray-700" : "bg-[linear-gradient(135deg,#0b1f3a_0%,#143d73_35%,#194a89_65%,#2f6db5_100%)]"}`}>
-        <Badge title='Spineor WebServices' className="" lineColor="bg-white" />
+        <Badge title='Spineor WebServices' className="" isDark={isDark} />
         <div className='flex flex-col lg:flex-row items-center '>
           <div className="w-full lg:w-7/12  flex">
 

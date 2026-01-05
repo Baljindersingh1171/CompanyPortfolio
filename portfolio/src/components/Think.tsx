@@ -30,7 +30,7 @@ const Think: React.FC = ({isDark}:any) => {
   return (
     <div className={` max-w-7xl mx-auto px-4 font-sans  ${isDark ? "text-white" : "text-gray-800"} `}>
       <div className='w-full '>
-         <Badge title='Spineor WebServices' className=" pt-15"  />
+         <Badge title='Spineor WebServices' className=" pt-15" isDark={isDark} />
       </div>
        
       {/* Header Section */}

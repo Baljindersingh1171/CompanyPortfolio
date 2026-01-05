@@ -1,21 +1,23 @@
 import { Menu, Moon, Sun, X } from "lucide-react";
 import { useState } from "react";
 
-import spineorlogo from "../assets/images/spineorlogo.jpg";
+import darkspineorlogo from "../assets/images/darkspineorlogo.png";
+import ligthspineorlogo from "../assets/images/lightspineorlogo.png";
 
 const Header = ({ isDark, setIsDark }: any) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  console.log("isDark in header:", isDark);
 
   return (
     <nav
       className={`fixed w-full top-0 z-50 shadow-md transition-colors duration-300 ${
-        isDark ? "bg-gray-900 border-b border-gray-700" : "bg-white"
+        isDark ? "bg-gray-900/70 border-b border-gray-700 backdrop-blur-md " : "bg-white"
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <img src={spineorlogo} alt="spineor" className="max-w-[100px]"/>
+          <img src={isDark ? darkspineorlogo : ligthspineorlogo} alt="spineor" className="max-w-[120px]"/>
          
 
           {/* Desktop Menu */}
@@ -24,7 +26,7 @@ const Header = ({ isDark, setIsDark }: any) => {
               <a
                 key={item}
                 href={`#${item}`}
-                className={`capitalize font-medium transition-colors border-b-2 border-transparent hover:border-[#194a89] hover:text-[#194a89] text-base sm:text-lg md:text-xl`}
+                className={`${isDark ? "text-white hover:text-white hover:border-white" : "text-black"} capitalize font-medium transition-colors border-b-2 border-transparent hover:border-[#194a89] hover:text-[#194a89] text-base sm:text-lg md:text-xl`}
               >
                 {item}
               </a>
@@ -72,7 +74,7 @@ const Header = ({ isDark, setIsDark }: any) => {
                 key={item}
                 href={`#${item}`}
                 onClick={() => setIsMenuOpen(false)}
-                className="block w-full text-left px-3 py-2 rounded-md capitalize font-medium dark:hover:bg-gray-700 transition-colors border-b-2 border-transparent hover:border-[#194a89] text-base sm:text-lg md:text-xl"
+                className={`${isDark ? "text-white" : "text-black"} block w-full text-left px-3 py-2 rounded-md capitalize font-medium dark:hover:bg-gray-700 transition-colors  border-b-2 border-transparent hover:border-[#194a89] text-base sm:text-lg md:text-xl`}
                
               >
                 {item}

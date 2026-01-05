@@ -71,7 +71,7 @@ const ListItem: React.FC<MessageItem> = ({ id, title, description, isDark }) => 
 const Message: React.FC = ({isDark}:any) => {
   return (
     <div className={` min-h-screen w-full font-sans mt-15 max-w-7xl mx-auto px-4 `} >
-       <Badge title='Spineor WebServices' className=""/>
+       <Badge title='Spineor WebServices' className="" isDark={isDark} />
 
       <div className='flex flex-col lg:flex-row'>
 

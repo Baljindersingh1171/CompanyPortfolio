@@ -7,7 +7,7 @@ const WhyUs = ({ isDark }: { isDark: boolean }) => {
       id="about"
       className={` max-w-7xl mx-auto px-4 `}
     >
-       <Badge title="Spineor WebServices" className="" />
+       <Badge title="Spineor WebServices" isDark={isDark} />
 
       <div className=" flex flex-col lg:flex-row items-center">
           {/* Left Image */}

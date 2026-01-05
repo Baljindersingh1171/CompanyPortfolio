@@ -56,7 +56,7 @@ export default function TermConditions({ isDark }:any) {
 
 
                     <div className="w-full mx-auto  text-white">
-                        <Badge title="Spineor WebServices" lineColor="bg-white" />
+                        <Badge title="Spineor WebServices" isDark={isDark} />
                         <div className="">
                             <h1 className="text-4xl md:text-5xl font-bold mb-7 underline-offset-10 underline">
                                 Terms & Conditions

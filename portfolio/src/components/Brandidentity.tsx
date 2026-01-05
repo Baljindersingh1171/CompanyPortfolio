@@ -24,7 +24,7 @@ export default function Brandidentity({ isDark }: { isDark?: boolean }) {
             : "bg-[linear-gradient(135deg,#0b1f3a_0%,#143d73_35%,#194a89_65%,#2f6db5_100%)]"
         }`}
       >
-        <Badge title="Spineor WebServices" lineColor="bg-white" />
+        <Badge title="Spineor WebServices" isDark={isDark} />
 
         <h1 className="text-white text-4xl md:text-5xl font-bold mt-8 mb-12 underline-offset-20  underline">
           Brand Identity

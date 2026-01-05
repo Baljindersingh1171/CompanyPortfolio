@@ -16,8 +16,9 @@ const About: React.FC<AboutProps> = ({ isDark }) => {
         {/* Wrapper */}
         <div className="w-full gap-10 px-4">
 
-        
-               <Badge title="Spineor WebServices" className="pt-10" />
+
+
+               <Badge title="Spineor WebServices" className="pt-10" isDark={isDark} />
 
           <div className="flex flex-col lg:flex-row ">
 

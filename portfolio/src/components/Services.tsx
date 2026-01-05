@@ -60,7 +60,7 @@ const Services: React.FC = ({isDark}:any) => {
   return (
     // Main Container with Purple Gradient Background
     <section className={`max-w-7xl mx-auto px-4 ${isDark ? "text-white" : "text-gray-800"}`} id="services">
-        <Badge title='Spineor WebServices' className=" pt-15"/>
+        <Badge title='Spineor WebServices' className=" pt-15" isDark={isDark} />
       <div className="max-w-7xl mx-auto">
         
         {/* Header */}
